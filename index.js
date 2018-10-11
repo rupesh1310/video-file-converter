@@ -14,13 +14,19 @@ app.on('ready', () => {
   });
     mainWindow.loadURL(`file://${__dirname}/src/index.html`);
 });
-
 ipcMain.on('VIDEOS_ADDED', (event, videos) => {
-//     const promise = new Promise((resolve, reject) => {
-//         let ffmpeg = fluent_ffmpeg(videos[0].path).setFfprobePath('C:\\Users\\Ben\\ffmpeg\\bin\\ffprobe.exe');
-//         ffmpeg.ffprobe(videos[0].path, (err, metadata) => {
-//             resolve(metadata);
-//         });
-//     });
 
-//     promise.then((metadata) => {console.log(metadata);})
+
+    const promises = _.map(videos, video => {
+      // promise.then((metadata) => {console.log(metadata);})
+        return new Promise((resolve, reject) => {
+              ffmpeg.ffprobe(video.path, (err, metadata) => {
+                resolve(video);
+            });
+        });
+
+      });
+    Promise.all(promises)
+    .then((results) => console.log(results));
+  });
+
