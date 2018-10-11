@@ -16,13 +16,11 @@ In a new terminal window:
 
 `npm run electron`
 
-
-For detailed explanation on how things work, checkout the [guide](https://electronjs.org/)
-
 ![](https://img.shields.io/badge/Demo-red.svg?style=for-the-badge)
 
 ![alt tag](/converter.gif)
 
+# For detailed explanation on how things work, checkout the [guide](https://electronjs.org/)
 
 
 
