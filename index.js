@@ -1,7 +1,7 @@
 
 const electron = require('electron');
 const ffmpeg = require('fluent-ffmpeg');
-
+const _ = require('lodash');
 const { app, BrowserWindow } = electron;
 
 let mainWindow;
