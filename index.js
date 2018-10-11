@@ -1,5 +1,6 @@
 
 const electron = require('electron');
+const ffmpeg = require('fluent-ffmpeg');
 
 const { app, BrowserWindow } = electron;
 
