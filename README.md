@@ -20,7 +20,7 @@ In a new terminal window:
 
 ![alt tag](/converter.gif)
 
-# For detailed explanation on how things work, checkout the [guide](https://electronjs.org/)
+### For detailed explanation on how things work, checkout the [guide](https://electronjs.org/)
 
 
 
