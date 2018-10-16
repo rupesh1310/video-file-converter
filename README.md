@@ -1,4 +1,4 @@
-# Video Converter
+# Video File Converter
 
 > Electron Application
 
